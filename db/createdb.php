@@ -18,6 +18,7 @@ try {
     $conn = null; // отключаемся от бд
 
     $conn = new mysqli($servername, $username, $password, $dbname);
+    // Создаем таблицы Филиалов и Работников
     $sql = "CREATE TABLE Places (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
         `address` VARCHAR(30) NOT NULL,
